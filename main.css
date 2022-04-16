@@ -1,0 +1,64 @@
+body{
+    background: rgb(232, 197, 158);
+}
+
+.container{
+    display: grid;
+    grid-template-columns:
+   1fr       2fr       1fr;
+    grid-template-areas:
+  "heady     heady     heady"
+  "aside1    mainy     aside2"
+  "aside1    mainy     aside2"
+  "footy     footy     footy";
+}
+
+header{grid-area: heady;}
+main{grid-area: mainy; background-color: rgb(232, 214, 158);}
+footer{grid-area: footy; background-color: rgb(180, 184, 191);}
+#aside1{grid-area: aside1;}
+#aside2{grid-area: aside2;}
+
+header,
+aside,
+main,
+footer{
+    padding: 1.5em;
+}
+
+main, footer a{
+    text-decoration: none;
+    color: rgb(75, 83, 32);
+}
+
+main p, h1{
+    color: black;
+}
+
+main, #aside2, footer{
+    text-align: center;
+}
+
+.pageNav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 300px;
+}
+
+.pageNav lo{
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+.pageNav a{
+    font-size: 40px;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+}
+
+.pageNav a:hover{
+    background-color: rgb(242, 207, 168);
+}
