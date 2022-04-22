@@ -8,6 +8,7 @@ body{
    1fr       2fr       1fr;
     grid-template-areas:
   "heady     heady     heady"
+  "nav       nav       nav"
   "aside1    mainy     aside2"
   "aside1    mainy     aside2"
   "footy     footy     footy";
@@ -16,7 +17,7 @@ body{
 header{grid-area: heady;}
 main{grid-area: mainy; background-color: rgb(232, 214, 158);}
 footer{grid-area: footy; background-color: rgb(180, 184, 191);}
-#aside1{grid-area: aside1;}
+#aside1{grid-area: nav;}
 #aside2{grid-area: aside2;}
 
 header,
@@ -39,21 +40,22 @@ main, #aside2, footer{
     text-align: center;
 }
 
-.pageNav ul {
+.pageNav ol {
     list-style-type: none;
     margin: 0;
-    padding: 0;
+    padding: 11em;
     width: 300px;
+    display: inline;
 }
 
 .pageNav lo{
-    padding: 8px 16px;
+    padding: .5em .7em;
     text-decoration: none;
 }
 
 .pageNav a{
     font-size: 40px;
-    display: block;
+    display: inline-block;
     text-align: center;
     text-decoration: none;
     color: black;
@@ -61,4 +63,17 @@ main, #aside2, footer{
 
 .pageNav a:hover{
     background-color: rgb(242, 207, 168);
+}
+
+
+
+@media screen
+and (max-width: 1200px){
+    .pageNav a{
+        font-size: 40px;
+        display: inline;
+        text-align: center;
+        text-decoration: none;
+        color: black;
+    }
 }
