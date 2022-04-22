@@ -43,9 +43,10 @@ main, #aside2, footer{
 .pageNav ol {
     list-style-type: none;
     margin: 0;
-    padding: 11em;
+    padding: 0;
     width: 300px;
     display: inline;
+    padding-left: 22em;
 }
 
 .pageNav lo{
@@ -54,7 +55,7 @@ main, #aside2, footer{
 }
 
 .pageNav a{
-    font-size: 40px;
+    font-size: 30px;
     display: inline-block;
     text-align: center;
     text-decoration: none;
@@ -70,7 +71,7 @@ main, #aside2, footer{
 @media screen
 and (max-width: 1200px){
     .pageNav a{
-        font-size: 40px;
+        font-size: 30px;
         display: inline;
         text-align: center;
         text-decoration: none;
