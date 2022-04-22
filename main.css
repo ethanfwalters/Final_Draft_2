@@ -16,7 +16,7 @@ body{
 
 header{grid-area: heady;}
 main{grid-area: mainy; background-color: rgb(232, 214, 158);}
-footer{grid-area: footy; background-color: rgb(180, 184, 191);}
+footer{grid-area: footy; background-color: rgb(200, 204, 211);}
 #aside1{grid-area: nav;}
 #aside2{grid-area: aside2;}
 
