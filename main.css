@@ -43,10 +43,9 @@ main, #aside2, footer{
 .pageNav ol {
     list-style-type: none;
     margin: 0;
-    padding: 0;
     width: 300px;
     display: inline;
-    padding-left: 22em;
+    padding: 0 0 0 22em;
 }
 
 .pageNav lo{
